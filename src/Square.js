@@ -4,7 +4,8 @@ const Square = (props) => {
     top: props.top,
     left: props.left,
   };
-  return <div className="Square" style={style}></div>;
+  //console.log(props.onClickSquare);
+  return <div className="square" style={style} onClick={props.onClickSquare}></div>;
 };
 
 export default Square;
