@@ -3,16 +3,12 @@ import "./App.css";
 import Square from "./Square";
 
 function App() {
-  // const onClick = () => {
-  //   alert("test");
-  // };
   const onClick2 = () => {
     alert("test2");
   };
   const onClick3 = () => {
     alert("test3");
   };
-
   const RadiusSquare = () => {
     let elem = document.querySelector("div.square");
     elem.style.borderRadius = "50%";
