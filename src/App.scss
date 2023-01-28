@@ -1,10 +1,22 @@
+body {
+  background: linear-gradient(to top right, #ef6b50, #f8ad70);
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Futura-Light";
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+  fill: #fff;
 }
 
 @media (prefers-reduced-motion: no-preference) {

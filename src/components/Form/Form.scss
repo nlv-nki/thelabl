@@ -1,0 +1,27 @@
+.form {
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 470px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  max-width: 470px;
+  margin: 0 auto;
+  white-space: nowrap;
+  text-align: center;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__help-link {
+    padding: 25px 0;
+    a {
+      display: inline-block;
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      margin: 0 6px;
+      font-weight: 400;
+      font-family: "Futura-Light";
+    }
+  }
+}
