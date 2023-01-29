@@ -1,0 +1,25 @@
+.user-menu {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    font-size: 17px;
+    line-height: 1.18;
+    color: #000;
+    text-decoration: none;
+  }
+  &__city {
+    padding: 13px 30px;
+  }
+  &__city::before {
+    content: "";
+    background: url("./point.svg");
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+  }
+}
