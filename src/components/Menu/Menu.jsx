@@ -29,7 +29,7 @@ const Menu = (props) => {
           if (index > 6) {
             option = new Option(item.title);
             select.append(option);
-            // return item.title;
+            return true;
           }
         })}
       </nav>
