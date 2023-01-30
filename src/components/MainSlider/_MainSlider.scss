@@ -1,0 +1,30 @@
+.main-slider {
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-repeat: no-repeat !important;
+  background-size: 10px auto !important;
+  background-position: center center !important;
+  width: 36px !important;
+  height: 35px !important;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: none;
+}
+
+.swiper-button-next {
+  background-image: url(./arrow.svg);
+  transform: rotatey(-180deg);
+}
+
+.swiper-button-prev {
+  background-image: url(./arrow.svg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}

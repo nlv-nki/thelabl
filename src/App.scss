@@ -1,0 +1,37 @@
+@import "./components/Container/Container";
+@import "./components/Logo/Logo";
+@import "./components/Button/Button";
+@import "./components/Header/Header";
+@import "./components/Menu/Menu";
+@import "./components/UserMenu/UserMenu";
+@import "./components/Catalog/Catalog";
+@import "./components/MainSlider/MainSlider";
+@import "./components/CatalogMenu/CatalogMenu";
+@import "./components/CatalogItem/CatalogItem";
+@import "./components/Footer/Footer";
+
+// .App {
+//   text-align: center;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

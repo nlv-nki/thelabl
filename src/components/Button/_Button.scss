@@ -1,0 +1,21 @@
+.button {
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: block;
+  text-align: center;
+  height: 49px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #ee7203;
+  font-size: 17px;
+  line-height: normal;
+  padding: 0 22px;
+  font-family: ITC-Franklin-Gothic, sans-serif;
+  transition: background-color 0.25s ease;
+  &--gray {
+    background-color: #f4f4f4;
+    color: #000;
+  }
+}
