@@ -1,0 +1,48 @@
+.footer {
+  font-size: 14px;
+  line-height: 1.43;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  &__right,
+  &__left {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+  }
+  &__right {
+    flex-direction: column;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start;
+
+    a,
+    p {
+      color: #000;
+      position: relative;
+      text-decoration: none;
+      margin: 3px 0;
+    }
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 1.18;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  &__info {
+    padding: 5px 20px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    text-align: left;
+  }
+}

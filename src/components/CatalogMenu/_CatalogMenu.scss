@@ -1,0 +1,49 @@
+.catalog-menu {
+  display: flex;
+  padding: 20px 0;
+
+  &__item {
+    padding: 12px;
+    color: #606060;
+    white-space: nowrap;
+    transition: all 0.25s ease 0.2;
+  }
+
+  &__item:hover {
+    color: #000;
+    background: #f4f4f4;
+    border-radius: 24px;
+  }
+
+  &__select {
+    padding: 10px 0 10px 25px;
+    border: none;
+    border-radius: 45px;
+    position: relative;
+    // opacity: 1;
+    background: #f4f4f4;
+    appearance: none;
+    white-space: nowrap;
+    background: url("./arrow.svg") right center no-repeat;
+    background-size: 25px;
+
+    option {
+      margin: 40px;
+      background: rgba(55, 211, 133, 0.3);
+      background-color: #0f0;
+      color: rgb(102, 16, 16);
+      border-bottom: 12px solid #777;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+.catalog-menu__select::before {
+  display: block;
+  content: "1";
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  background: url("./arrow.svg") center center;
+}

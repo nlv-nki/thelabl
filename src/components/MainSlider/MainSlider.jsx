@@ -2,9 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 
 // Import Swiper styles
-import "swiper/css/bundle";
-
-import data from "../../data.json";
+//import "swiper/scss/bundle";
+import "swiper/scss";
+import "swiper/scss/navigation";
+// Import data
+import data from "./../../data/data.json";
 
 const MainSlider = () => {
   return (
@@ -15,10 +17,13 @@ const MainSlider = () => {
       spaceBetween={50}
       loop={true}
       slidesPerView={1}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+
+      // navigation={{
+      //   prevEl: ".swiper-button-prev",
+      //   nextEl: ".swiper-button-next",
+      // }}
     >
-      {data.map((item, i) => {
+      {data.MainSlider.map((item, i) => {
         return (
           <SwiperSlide key={i}>
             <img src={item.imageUrl} alt={item.title} />

@@ -1,0 +1,138 @@
+{
+  "mainMenuItems": [
+    {
+      "title": "Меню",
+      "url": "#"
+    },
+    {
+      "title": "Акции",
+      "url": "#"
+    },
+    {
+      "title": "Кафе",
+      "url": "#"
+    },
+    {
+      "title": "Кидз Комбо",
+      "url": "#"
+    },
+    {
+      "title": "Мы на карте",
+      "url": "#"
+    },
+    {
+      "title": "Новинки",
+      "url": "#"
+    },
+    {
+      "title": "Новости",
+      "url": "#"
+    },
+    {
+      "title": "О нас",
+      "url": "#"
+    }
+  ],
+
+  "catalogMenuItems": [
+    {
+      "title": "Новинки",
+      "url": "#"
+    },
+
+    {
+      "title": "Популярное",
+      "url": "#"
+    },
+    {
+      "title": "Комбо Обед",
+      "url": "#"
+    },
+    {
+      "title": "Бургеры и роллы",
+      "url": "#"
+    },
+    {
+      "title": "Картофель, стартеры и салаты",
+      "url": "#"
+    },
+    {
+      "title": "Кафе",
+      "url": "#"
+    },
+    {
+      "title": "Напитки",
+      "url": "#"
+    },
+    { "title": "Завтрак", "url": "#" },
+    {
+      "title": "Кидз Комбо",
+      "url": "#"
+    },
+    {
+      "title": "Десерты",
+      "url": "#"
+    },
+    {
+      "title": "Соусы",
+      "url": "#"
+    }
+  ],
+
+  "MainSlider": [
+    {
+      "title": "Slide 1",
+      "color": "#aac3bf",
+      "imageUrl": "https://vkusnoitochka.ru/upload/iblock/235/ml7hrz4zm6upjr2wvo8bes0hksxhdif5/SITEn_mailing_list_1200x400_min.jpg"
+    },
+    {
+      "title": "Slide 2",
+      "color": "#c9b1bd",
+      "imageUrl": "https://vkusnoitochka.ru/upload/iblock/133/SITEn_Chicken_jalapeno_1200x400_min.jpg"
+    }
+  ],
+
+  "products": [
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00",
+      "label": "Популярно"
+    },
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00"
+    },
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00"
+    },
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00"
+    },
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00"
+    },
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00"
+    },
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00"
+    },
+    {
+      "title": "Гранд Де Люкс",
+      "imageUrl": "https://ma-prod-cdn.mcdonalds.ru/product/9c526587112b4d3f8a4c04b3b71d8999/android/l/main.png",
+      "price": "22.00"
+    }
+  ]
+}
