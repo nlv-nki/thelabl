@@ -4,8 +4,6 @@ const InputField = () => {
   const [signSum, changeSum] = useState(false);
 
   const inputHandler = (event) => {
-    console.log(event.target.value.length);
-
     if (event.target.value.length >= 8) {
       changeSum(true);
     }
