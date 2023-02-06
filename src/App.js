@@ -1,22 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
 function App() {
+  const [showImage, setShowImage] = useState(true);
+  const [text, setTextButton] = useState("Скрыть");
+  console.log("render");
+  const Text = (props) => {
+    return <p>Text {props.text}</p>;
+  };
+
+  const handleShowImage = () => {
+    setShowImage();
+
+    if (showImage === true) {
+      setShowImage(false);
+      setTextButton("Показать");
+    } else {
+      setShowImage(true);
+      setTextButton("Скрыть");
+    }
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {showImage && <img src={logo} className="App-logo" alt="logo" />}
+        <Text text={String(showImage)} />
+        <button onClick={handleShowImage}>{text}</button>
       </header>
     </div>
   );
