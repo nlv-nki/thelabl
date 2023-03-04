@@ -1,5 +1,9 @@
-const Button = ({ value }) => {
-  return <button disabled={value ? "" : true}>Add User</button>;
+const Button = (props) => {
+  return (
+    <button disabled={props.disabled ? "" : true} name={props.name} onClick={props.onClick}>
+      Add User
+    </button>
+  );
 };
 
 export default Button;

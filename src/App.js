@@ -1,39 +1,24 @@
 import { useState } from "react";
-//import Form from "./components/Form/Form";
+import Button from "./components/Button/Button";
+import InputField from "./components/InputField/InputField";
+import rules from "./data/rules";
 function App() {
   const [fiields, setFields] = useState({
     login: {
-      value: "1",
+      value: "",
       isReadySubmit: false,
     },
     password: {
-      value: "2",
+      value: "",
       isReadySubmit: false,
     },
     email: {
-      value: "3",
+      value: "",
       isReadySubmit: false,
     },
   });
 
-  const rules = {
-    login: {
-      minLength: 5,
-      specChar: false,
-    },
-    password: {
-      minLength: 10,
-      specChar: false,
-    },
-
-    email: {
-      minLength: 5,
-      specChar: "@",
-    },
-  };
-
   const isReady = () => {
-    //  console.log(Object.values(fiields).every((item) => item.isReadySubmit));
     return Object.values(fiields).every((item) => item.isReadySubmit);
   };
 
@@ -71,7 +56,6 @@ function App() {
         },
       };
     });
-    console.log(fiields);
     fieldChecker(fiield);
   };
 
@@ -85,16 +69,20 @@ function App() {
     } else {
       setReadySubmit(field, false);
     }
-
-    isReady();
   };
 
   return (
     <div className="App">
-      <input value={fiields.login.value} name="login" onChange={fieldChangeHandler} />
-      <input value={fiields.password.value} name="password" onChange={fieldChangeHandler} />
-      <input value={fiields.email.value} name="email" onChange={fieldChangeHandler} />
-      <button disabled={isReady() ? "" : true}>Add User</button>
+      <InputField name="login" onChange={fieldChangeHandler} />
+      <InputField name="password" onChange={fieldChangeHandler} />
+      <InputField name="email" onChange={fieldChangeHandler} />
+      <Button
+        disabled={isReady()}
+        onClick={() => {
+          console.log(`Your login ${fiields.login.value}`);
+        }}
+        name="btn"
+      />
     </div>
   );
 }
