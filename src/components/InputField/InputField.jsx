@@ -1,6 +1,7 @@
 import { useState } from "react";
-//import Form from "./components/Form/Form";
-function App() {
+import rules from "../../data/rules.jsx";
+
+const InputField = (props) => {
   const [fiields, setFields] = useState({
     login: {
       value: "1",
@@ -16,24 +17,7 @@ function App() {
     },
   });
 
-  const rules = {
-    login: {
-      minLength: 5,
-      specChar: false,
-    },
-    password: {
-      minLength: 10,
-      specChar: false,
-    },
-
-    email: {
-      minLength: 5,
-      specChar: "@",
-    },
-  };
-
   const isReady = () => {
-    //  console.log(Object.values(fiields).every((item) => item.isReadySubmit));
     return Object.values(fiields).every((item) => item.isReadySubmit);
   };
 
@@ -56,13 +40,21 @@ function App() {
       };
     });
   };
+  // const handleChange = (event) => {
+  //   props.onChangeState(isReady());
+  // };
 
   const fieldChangeHandler = (evt) => {
     const value = evt.target.value;
     const fiield = evt.target;
     const name = fiield.name;
+    console.log(value);
 
     setFields((previosState) => {
+      console.log(previosState[name], 777);
+      console.log(name, value);
+
+      console.log(fiields, 909);
       return {
         ...previosState,
         [name]: {
@@ -71,13 +63,14 @@ function App() {
         },
       };
     });
-    console.log(fiields);
+
     fieldChecker(fiield);
   };
 
   const fieldChecker = (field) => {
     if (!isEmail(field, rules) && minLenght(field, rules)) {
       setReadySubmit(field, true);
+      console.log(field, 888);
     } else if (isEmail(field, rules)) {
       if (field.value.includes("@")) {
         setReadySubmit(field, true);
@@ -87,16 +80,10 @@ function App() {
     }
 
     isReady();
+    //  handleChange(isReady());
   };
 
-  return (
-    <div className="App">
-      <input value={fiields.login.value} name="login" onChange={fieldChangeHandler} />
-      <input value={fiields.password.value} name="password" onChange={fieldChangeHandler} />
-      <input value={fiields.email.value} name="email" onChange={fieldChangeHandler} />
-      <button disabled={isReady() ? "" : true}>Add User</button>
-    </div>
-  );
-}
+  return <input value={fiields[props.name].value} name={props.name} onChange={fieldChangeHandler} />;
+};
 
-export default App;
+export default InputField;
